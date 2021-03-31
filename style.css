@@ -17,12 +17,18 @@ body {
 header {
   display: grid;
   grid-area: head;
+  grid-template-columns: 200px 1fr;
   background-color: brown;
   align-content: center;
   color: white;
 }
 header h1 {
   margin-left: 10px;
+}
+nav {
+  display: grid;
+  grid-template-rows: 1fr;
+  align-items: center;
 }
 main {
   grid-area: main;
@@ -84,4 +90,17 @@ content p {
 }
 #quote2 {
   background-color: lightcoral;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 1rem;
+}
+a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2rem;
 }
