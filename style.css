@@ -1,0 +1,84 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template:
+    "head" 75px
+    "main" 1fr/
+    1fr;
+  height: 100vh;
+  width: 100vw;
+}
+header {
+  display: grid;
+  grid-area: head;
+  background-color: brown;
+  align-content: center;
+  color: white;
+}
+header h1 {
+  margin-left: 10px;
+}
+main {
+  grid-area: main;
+  display: grid;
+  grid-template:
+    ". author ." 1fr
+    ". music . " 1fr/
+    1fr 600px 1fr;
+}
+.authorquotes {
+  grid-area: author;
+  display: grid;
+  grid-template-rows: 100px repeat(3, 150px);
+  grid-gap: 20px;
+  align-items: center;
+}
+
+section h2 {
+  display: grid;
+  justify-content: start;
+  margin-top: 60px;
+  font-size: 1.7rem;
+}
+content {
+  display: grid;
+  grid-template-rows: 50px 50px;
+  background-color: lightgreen;
+  line-height: 1.5rem;
+  align-content: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+content h3 {
+  display: grid;
+  align-content: center;
+  text-align: center;
+}
+content p {
+  text-align: end;
+  font-size: 0.7rem;
+  font-weight: bold;
+  margin: 10px 5px 0 0;
+}
+.music {
+  grid-area: music;
+  display: grid;
+  grid-template-rows: 50px repeat(3, 150px);
+  grid-gap: 20px;
+  align-items: center;
+}
+.music h2 {
+  justify-content: start;
+  align-content: center;
+  margin: 0px;
+}
+.music content {
+  grid-template-rows: 1fr;
+  background-color: lightskyblue;
+}
