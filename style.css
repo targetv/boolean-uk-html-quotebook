@@ -82,3 +82,6 @@ content p {
   grid-template-rows: 1fr;
   background-color: lightskyblue;
 }
+#quote2 {
+  background-color: lightcoral;
+}
