@@ -34,9 +34,9 @@ main {
   grid-area: main;
   display: grid;
   grid-template:
-    ". author ." 1fr
-    ". music . " 1fr/
-    1fr 600px 1fr;
+    ". author side-bar ." 1fr
+    ". music side-bar . " 1fr/
+    1fr 600px 200px 1fr;
 }
 .authorquotes {
   grid-area: author;
@@ -103,4 +103,24 @@ a {
   text-decoration: none;
   text-align: center;
   font-size: 1.2rem;
+}
+aside {
+  grid-area: side-bar;
+  display: grid;
+  grid-template-rows: 300px;
+  grid-gap: 10px;
+  margin: 200px 0px 0px 20px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+aside ul {
+  display: grid;
+  grid-template-rows: repeat(3, 100px);
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: lightcoral;
+}
+aside li {
+  margin: 0px;
 }
